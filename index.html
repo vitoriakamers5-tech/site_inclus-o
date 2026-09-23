@@ -1,51 +1,323 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Tecnologia para Todos</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-
+<body> <!-- CABEÇALHO -->
     <header class="cabecalho">
-
-        <div class="logo">
-            <a href="#inicio">Tecnologia para Todos</a>
-        </div>
-
+        <div class="logo"> <a href="#inicio">Tecnologia para Todos</a> </div> 
+        <!-- MENU PRINCIPAL -->
         <nav aria-label="Menu principal">
             <ul>
-                <li>
-                    <a href="#inicio">Início</a>
-                </li>
-
-                <li>
-                    <a href="#acessibilidade">Acessibilidade</a>
-                </li>
-
-                <li>
-                    <a href="#barreiras">Barreiras</a>
-                </li>
-
-                <li>
-                    <a href="#tecnologia-assistiva">Tecnologia Assistiva</a>
-                </li>
-
-                <li>
-                    <a href="#midias">Mídias</a>
-                </li>
-
-                <li>
-                    <a href="#sobre">Sobre</a>
-                </li>
+                <li> <a href="#inicio">Início</a> </li>
+                <li> <a href="#acessibilidade">Acessibilidade</a> </li>
+                <li> <a href="#barreiras">Barreiras</a> </li>
+                <li> <a href="#tecnologia-assistiva">Tecnologia Assistiva</a> </li>
+                <li> <a href="#midias">Mídias</a> </li>
+                <li> <a href="#sobre">Sobre</a> </li>
             </ul>
         </nav>
-
     </header>
+     <!-- CONTEÚDO PRINCIPAL -->
+    <main> <!-- APRESENTAÇÃO -->
+        <section id="inicio" class="inicio">
+            <div class="inicio-conteudo">
+                <p class="subtitulo"> TECNOLOGIA PARA TODOS </p>
+                <h1> Tecnologia só é para todos quando todos conseguem acessá-la. </h1>
+                <p class="texto-inicio"> A tecnologia está presente em quase todos os momentos da nossa vida. A
+                    acessibilidade digital ajuda a diminuir barreiras e tornar sites, aplicativos e ferramentas mais
+                    inclusivos. </p> <a href="#acessibilidade" class="botao"> Conheça a acessibilidade </a>
+            </div>
+        </section>
+
+
+        <!-- ACESSIBILIDADE DIGITAL -->
+        <section id="acessibilidade">
+
+            <div class="conteudo-secao acessibilidade-primeira">
+
+    <div class="texto-secao">
+
+    <h2>O que é acessibilidade digital?</h2>
+
+    <p>
+        A acessibilidade digital busca tornar sites, aplicativos
+        e tecnologias mais fáceis de utilizar por diferentes pessoas.
+        Recursos como textos alternativos, legendas, bom contraste
+        e navegação pelo teclado ajudam a reduzir barreiras.
+    </p>
+
+    <p class="destaque">
+        Acessibilidade digital significa criar experiências
+        que possam ser utilizadas por diferentes pessoas.
+    </p>
+
+    <img 
+        src="assets/acessibilidade-digital.png"
+        alt="Laptop apresentando recursos de acessibilidade digital, como legendas, teclado adaptado e recursos de inclusão."
+    >
+
+</div>
+            </div>
+
+        </section>
+
+               <!-- BARREIRAS DIGITAIS -->
+<section id="barreiras">
+
+    <div class="conteudo-secao layout-imagem-esquerda">
+
+        <div class="imagem-secao">
+
+            <img 
+                src="assets/barreiras-digitais.png"
+                alt="Pessoa utilizando um computador com exemplos de barreiras digitais, como falta de contraste, imagens sem texto alternativo e navegação limitada."
+            >
+
+        </div>
+
+        <div class="texto-secao">
+
+            <h2>Barreiras digitais: quando a tecnologia exclui</h2>
+
+            <p>
+                Alguns sites e aplicativos podem criar dificuldades
+                para seus usuários. Baixo contraste, imagens sem descrição,
+                falta de legendas e páginas que não funcionam pelo teclado
+                são exemplos de barreiras que podem dificultar o acesso
+                à informação.
+            </p>
+
+            <p class="destaque">
+                Uma barreira digital pode transformar uma tarefa simples
+                em um grande desafio.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+ <!-- TECNOLOGIA ASSISTIVA -->
+<section id="tecnologia-assistiva">
+
+    <div class="conteudo-secao layout-texto-esquerda">
+
+        <div class="texto-secao">
+
+            <h2>Tecnologia assistiva: ferramentas que ajudam</h2>
+
+            <p>
+                A tecnologia assistiva reúne recursos que ajudam pessoas
+                a realizar atividades com mais autonomia. Leitores de tela,
+                comandos de voz, teclados adaptados e legendas são alguns
+                exemplos que facilitam o acesso à tecnologia.
+            </p>
+
+            <p class="destaque">
+                A tecnologia pode remover barreiras quando é criada
+                pensando em diferentes necessidades.
+            </p>
+
+        </div>
+
+        <div class="imagem-secao">
+
+            <img 
+                src="assets/tecnologia-assistiva.png"
+                alt="Pessoa utilizando recursos de tecnologia assistiva, como display Braille, teclado adaptado e recursos de acessibilidade."
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+                <!-- PODCAST -->
+      <section id="podcast">
+    <div class="conteudo-secao">
+        <div class="texto-secao">
+            <h2>Podcast</h2>
+
+            <p>
+                Neste episódio, conversamos sobre a importância da inclusão
+                e da acessibilidade no mundo digital.
+            </p>
+
+            <div class="player-podcast">
+                <audio controls>
+                    <source src="assets/podcast.mp3" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </div>
+
+           <details class="transcricao">
+    <summary>Ouvir e ler a transcrição</summary>
+
+    <div class="texto-transcricao">
+        <p>
+            <strong>Transcrição do podcast:</strong>
+        </p>
+
+        <p>
+            Olá!
+        </p>
+
+        <p>
+            Hoje vamos falar sobre um assunto que está cada vez mais presente
+            em nossas vidas, a tecnologia e a importância de torná-la acessível
+            para todos.
+        </p>
+
+        <p>
+            Atualmente, usamos a tecnologia para praticamente tudo. Estudamos
+            pela internet, conversamos com outras pessoas, trabalhamos,
+            assistimos a vídeos, fazemos compras e buscamos informações usando
+            celulares e computadores.
+        </p>
+
+        <p>
+            Porém, nem todas as pessoas conseguem utilizar esses recursos da
+            mesma maneira. Para algumas pessoas, acessar um site, assistir a um
+            vídeo ou utilizar um aplicativo pode ser difícil quando ele não foi
+            desenvolvido pensando em diferentes necessidades. É nesse momento
+            que entra a acessibilidade digital.
+        </p>
+
+        <p>
+            A acessibilidade busca diminuir essas barreiras e permitir que mais
+            pessoas tenham autonomia para utilizar a tecnologia. Recursos como
+            leitores de tela, legendas, descrição de imagens, navegação pelo
+            teclado, contraste adequado e textos fáceis de compreender podem
+            fazer uma grande diferença.
+        </p>
+
+        <p>
+            Imagine, por exemplo, uma pessoa com deficiência visual tentando
+            acessar um site. Se esse site possuir uma estrutura organizada e
+            compatível com leitores de tela, ela poderá navegar pelas
+            informações com muito mais facilidade.
+        </p>
+
+        <p>
+            Da mesma forma, uma pessoa surda pode depender de legendas para
+            compreender o conteúdo de um vídeo.
+        </p>
+
+        <p>
+            Além da acessibilidade digital, também existe a tecnologia
+            assistiva. Ela inclui ferramentas e recursos criados para ajudar
+            pessoas com diferentes necessidades a estudar, trabalhar, se
+            comunicar e realizar atividades do dia a dia com mais
+            independência.
+        </p>
+
+        <p>
+            A inteligência artificial também pode contribuir nesse processo.
+            Ela pode ajudar a gerar legendas, descrever imagens, transformar
+            textos em voz e criar novas ferramentas que facilitem o acesso à
+            informação.
+        </p>
+
+        <p>
+            Porém, a inteligência artificial deve ser usada com
+            responsabilidade. Seus resultados precisam ser revisados por
+            pessoas, pois uma tecnologia pode cometer erros ou reproduzir
+            informações inadequadas.
+        </p>
+
+        <p>
+            Por isso, pensar em acessibilidade não deve ser uma preocupação
+            apenas depois que uma tecnologia está pronta. Ela deve fazer parte
+            do projeto desde o começo.
+        </p>
+
+        <p>
+            Desenvolvedores, designers, empresas e usuários precisam considerar
+            que as pessoas possuem diferentes formas de enxergar, ouvir,
+            compreender e interagir com o mundo digital.
+        </p>
+
+        <p>
+            No final, tecnologia de verdade não é apenas aquela que é moderna
+            ou inovadora. É aquela que consegue alcançar diferentes pessoas e
+            oferecer oportunidades para que todos possam participar.
+        </p>
+
+        <p>
+            A tecnologia deve conectar, facilitar e incluir, porque quando
+            eliminamos barreiras, criamos um mundo digital onde mais pessoas
+            podem aprender, trabalhar, se comunicar e ter autonomia.
+        </p>
+
+        <p>
+            Tecnologia para todos não é apenas uma escolha. É uma forma de
+            construir um futuro mais acessível, inclusivo e humano.
+        </p>
+    </div>
+</details>
+        </div>
+    </div>
+</section>
+
+                <!-- SOBRE O PROJETO -->
+        <section id="sobre">
+
+            <div class="conteudo-secao">
+
+                <div class="texto-secao">
+
+                    <h2>Sobre o projeto</h2>
+
+                    <p>
+                        Este projeto foi desenvolvido para conscientizar sobre
+                        a importância da inclusão e da acessibilidade no mundo
+                        digital. A proposta é mostrar que pequenas escolhas
+                        podem ajudar a tornar a tecnologia mais acessível para todos.
+                    </p>
+
+                    <h3>Equipe</h3>
+
+                    <ul>
+                        <li>Vitória Kamers</li>
+                        <li>Abraão Gomes</li>
+                        <li>Hadassa Alves</li>
+                    </ul>
+
+                    <p class="destaque">
+                        Quando pensamos em acessibilidade, criamos tecnologia
+                        para mais pessoas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+        <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <p>
+            Projeto Tecnologia para Todos
+        </p>
+
+        <p>
+            Vitória Kamers • Abraão Gomes • Hadassa Alves
+        </p>
+
+    </footer>
 
 </body>
+
 </html>

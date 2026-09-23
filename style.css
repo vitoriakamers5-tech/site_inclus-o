@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #071a2d;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+section {
+    width: 100%;
+    padding: 80px 8%;
+}
+
+.cabecalho {
+    width: 100%;
+    padding: 20px 8%;
+    background-color: #081f35;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #244765;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo a {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    font-size: 15px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff4fa3;
+}
+
+.inicio {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-image:
+        linear-gradient(rgba(7, 26, 45, 0.72), rgba(7, 26, 45, 0.72)),
+        url("assets/fundo-apresentacao.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.inicio-conteudo {
+    max-width: 850px;
+}
+
+.subtitulo {
+    color: #ff4fa3;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.inicio h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.texto-inicio {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #d7e2ec;
+    font-size: 18px;
+}
+
+.botao {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background-color: #ff4fa3;
+    color: #ffffff;
+
+    border-radius: 8px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #ff2f8e;
+    transform: translateY(-2px);
+}
+
+.conteudo-secao {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.texto-secao {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+.texto-secao h2 {
+    color: #ff4fa3;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.texto-secao p {
+    color: #d7e2ec;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.destaque {
+    border-left: 4px solid #ff4fa3;
+    padding: 15px 20px;
+    background-color: #0b2945;
+    border-radius: 0 8px 8px 0;
+    font-weight: bold;
+}
+
+/* ==============================
+   IMAGENS
+============================== */
+
+.texto-secao img {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    object-fit: cover;
+
+    margin: 35px auto 0;
+
+    border-radius: 15px;
+    border: 1px solid #244765;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* ==============================
+   RESPONSIVIDADE
+   CELULAR E TABLET
+============================== */
+
+@media (max-width: 768px) {
+
+    /* CABEÇALHO */
+
+    .cabecalho {
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+
+    /* SEÇÕES */
+
+    section {
+        padding: 60px 5%;
+    }
+
+
+    /* INÍCIO */
+
+    .inicio {
+        min-height: 75vh;
+    }
+
+    .inicio h1 {
+        font-size: 34px;
+    }
+
+    .texto-inicio {
+        font-size: 16px;
+    }
+
+    .subtitulo {
+        font-size: 13px;
+    }
+
+
+    /* CONTEÚDO */
+
+    .texto-secao {
+        max-width: 100%;
+    }
+
+    .texto-secao h2 {
+        font-size: 27px;
+    }
+
+    .texto-secao p {
+        font-size: 16px;
+    }
+
+
+    /* IMAGENS */
+
+    .texto-secao img {
+        height: auto;
+        max-height: 350px;
+        margin-top: 25px;
+    }
+
+
+    /* DESTAQUE */
+
+    .destaque {
+        padding: 13px 15px;
+    }
+}
+
+
+/* ==============================
+   CELULARES PEQUENOS
+============================== */
+
+@media (max-width: 480px) {
+
+    .cabecalho {
+        padding: 15px 4%;
+    }
+
+    .logo a {
+        font-size: 18px;
+    }
+
+    nav ul {
+        gap: 10px 14px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    section {
+        padding: 50px 4%;
+    }
+
+    .inicio h1 {
+        font-size: 29px;
+    }
+
+    .texto-inicio {
+        font-size: 15px;
+    }
+
+    .botao {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .texto-secao h2 {
+        font-size: 24px;
+    }
+
+    .texto-secao p {
+        font-size: 15px;
+    }
+
+    .texto-secao img {
+        border-radius: 10px;
+    }
+
+        .layout-imagem-esquerda,
+    .layout-texto-esquerda {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .layout-imagem-esquerda .texto-secao,
+    .layout-texto-esquerda .texto-secao {
+        width: 100%;
+    }
+
+    .imagem-secao {
+        width: 100%;
+    }
+
+    .imagem-secao img {
+        height: auto;
+        max-height: 350px;
+    }
+}
+
+/* ==============================
+   ACESSIBILIDADE PELO TECLADO
+============================== */
+
+a:focus-visible {
+    outline: 3px solid #ff4fa3;
+    outline-offset: 4px;
+    border-radius: 5px;
+}
+
+.botao:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+}
+
+/* ==============================
+   SOBRE O PROJETO
+============================== */
+
+.texto-secao h3 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.texto-secao ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.texto-secao li {
+    background-color: #0b2945;
+    border-left: 3px solid #ff4fa3;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 0 6px 6px 0;
+    color: #d7e2ec;
+}
+
+/* ==============================
+   RODAPÉ
+============================== */
+
+.rodape {
+    background-color: #081f35;
+    border-top: 1px solid #244765;
+    padding: 20px 8%;
+    text-align: center;
+}
+
+.rodape p {
+    color: #d7e2ec;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.rodape p:first-child {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+/* ==============================
+   RODAPÉ NO CELULAR
+============================== */
+
+@media (max-width: 480px) {
+
+    .rodape {
+        padding: 35px 5%;
+    }
+
+    .rodape p {
+        font-size: 14px;
+    }
+
+}
+
+/* ==============================
+   LAYOUT DOS TÓPICOS
+============================== */
+
+.layout-imagem-esquerda,
+.layout-texto-esquerda {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    gap: 50px;
+}
+
+.layout-imagem-esquerda .imagem-secao,
+.layout-imagem-esquerda .texto-secao,
+.layout-texto-esquerda .imagem-secao,
+.layout-texto-esquerda .texto-secao {
+    width: calc(50% - 25px);
+    max-width: none;
+}
+
+.imagem-secao {
+    display: flex;
+}
+
+.imagem-secao img {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid #244765;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ==============================
+   PADRONIZAÇÃO DOS TÓPICOS
+============================== */
+
+.conteudo-secao {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.layout-imagem-esquerda,
+.layout-texto-esquerda {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.layout-imagem-esquerda .texto-secao,
+.layout-texto-esquerda .texto-secao {
+    flex: 1;
+    width: 50%;
+}
+
+.layout-imagem-esquerda .imagem-secao,
+.layout-texto-esquerda .imagem-secao {
+    flex: 1;
+    width: 50%;
+}  
+
+/* ==============================
+   PRIMEIRO TÓPICO
+============================== */
+
+.acessibilidade-primeira {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.acessibilidade-primeira .texto-secao {
+    width: 100%;
+    max-width: none;
+}
+
+.acessibilidade-primeira .texto-secao img {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    object-fit: contain;
+}
+
+.player-podcast {
+    width: 100%;
+    margin: 30px 0;
+    padding: 25px;
+    background-color: #0b2945;
+    border: 1px solid #244765;
+    border-radius: 15px;
+}
+
+.player-podcast audio {
+    width: 100%;
+}
+
+.transcricao {
+    width: 100%;
+    background-color: #0b2945;
+    border: 1px solid #244765;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.transcricao summary {
+    padding: 18px 20px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.transcricao summary:hover {
+    color: #ff4fa3;
+}
+
+.texto-transcricao {
+    padding: 0 20px 20px;
+}
+
+.texto-transcricao p {
+    margin-bottom: 10px;
+}
