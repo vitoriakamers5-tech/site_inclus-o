@@ -185,85 +185,138 @@ nav a:hover {
 
 @media (max-width: 768px) {
 
-    /* CABEÇALHO */
-
     .cabecalho {
-    padding: 8px 5%;
-    gap: 10px;
-}
+        padding: 8px 5%;
+        gap: 10px;
+    }
 
-.logo img {
-    width: 90px;
-}
+    .logo img {
+        width: 90px;
+    }
 
     nav ul {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 12px 18px;
+        gap: 10px 15px;
     }
 
     nav a {
-        font-size: 14px;
+        font-size: 13px;
     }
-
-
-    /* SEÇÕES */
 
     section {
-        padding: 60px 5%;
+        padding: 55px 6%;
     }
 
-
-    /* INÍCIO */
-
+    /* APRESENTAÇÃO */
     .inicio {
         min-height: 75vh;
+        text-align: center;
+    }
+
+    .inicio-conteudo {
+        width: 100%;
     }
 
     .inicio h1 {
-        font-size: 34px;
+        font-size: 32px;
+        line-height: 1.25;
     }
 
     .texto-inicio {
         font-size: 16px;
     }
 
-    .subtitulo {
-        font-size: 13px;
-    }
-
-
-    /* CONTEÚDO */
-
+    /* CONTEÚDOS */
     .texto-secao {
+        width: 100%;
         max-width: 100%;
+        text-align: left;
     }
 
     .texto-secao h2 {
         font-size: 27px;
+        line-height: 1.25;
+        margin-bottom: 18px;
+    }
+
+    .texto-secao h3 {
+        font-size: 21px;
+        margin-top: 25px;
     }
 
     .texto-secao p {
         font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 18px;
     }
-
 
     /* IMAGENS */
-
-    .texto-secao img {
-        height: auto;
-        max-height: 350px;
-        margin-top: 25px;
+    .layout-imagem-esquerda,
+    .layout-texto-esquerda {
+        flex-direction: column;
+        gap: 30px;
     }
 
+    .layout-imagem-esquerda .imagem-secao,
+    .layout-texto-esquerda .imagem-secao,
+    .layout-imagem-esquerda .texto-secao,
+    .layout-texto-esquerda .texto-secao {
+        width: 100%;
+    }
 
-    /* DESTAQUE */
+    .imagem-secao {
+        width: 100%;
+        display: block;
+    }
 
+    .imagem-secao img {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        max-height: none;
+        object-fit: contain;
+        border-radius: 12px;
+    }
+
+    /* IMAGEM DE ACESSIBILIDADE */
+    .acessibilidade-primeira .texto-secao img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+    }
+
+    /* DESTAQUES */
     .destaque {
+        text-align: left;
         padding: 13px 15px;
     }
-}
 
+    /* VÍDEO */
+    .player-video {
+        width: 100%;
+        max-width: 100%;
+        padding: 7px;
+        margin: 25px auto;
+    }
+
+    /* PODCAST */
+    .player-podcast {
+        padding: 15px;
+        margin: 25px 0;
+    }
+
+    /* TRANSCRIÇÕES */
+    .transcricao summary {
+        padding: 16px;
+        font-size: 15px;
+    }
+
+    .texto-transcricao {
+        padding: 0 16px 16px;
+    }
+}
 
 /* ==============================
    CELULARES PEQUENOS
